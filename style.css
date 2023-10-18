@@ -1,0 +1,342 @@
+body {
+    color: rgb(248, 248, 250);
+    background: rgb(13, 21, 23);
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%;
+}
+
+div.figure {	
+    height: 50px;
+    border-radius: 50%;
+}
+
+img {	
+    height: 200px;
+    border-radius: 50%;
+    box-shadow:  0 0 25px  rgb(61, 61, 61);
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);  
+    transition: all 0.2s ease-in-out;
+}
+
+
+h2, h1 {
+    font-family: arial,helvetica;
+    font-size: 32px;
+    background: -webkit-linear-gradient(90deg, rgb(252, 252, 252)  -0.03%, rgb(172, 172, 172) 99.92%);
+    -webkit-background-clip: text;
+    /* -webkit-text-fill-color: transparent; */
+}
+
+p, i {
+    box-sizing: border-box;
+    margin-top: 30px;
+    font-size: 17px;
+    text-decoration: none;
+    font-family: arial,helvetica;
+    line-height: 150%;
+}
+
+li{
+    box-sizing: border-box;
+    margin-top: 1px;
+    font-size: 17px;
+    text-decoration: none;
+    font-family: arial,helvetica;
+    line-height: 150%;
+}
+
+a {
+   color: #FFF;
+   font-size: 20px;
+   font-family: serif;
+   text-decoration: none;
+}
+
+.container {
+    text-align: center;
+    margin-bottom: 3%;
+    
+}
+
+#favicon {
+    margin-left: 10px;
+    max-width:28px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+
+.topnav {
+    margin-bottom: 3%;
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+    /* padding: 2px; */
+    background-image: linear-gradient(#0e76a8,#0e76a8);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    background-position-x: right;
+    transition: background-size 500ms; 
+  }
+  
+.topnav a:hover {
+    background-color: #ddd;
+    background-size: 100% 100%;
+    background-position-x: left;
+}
+  
+/* Add a cor na ação do link */
+.topnav a.active {
+    background-color: #0e76a8;
+    color: white;
+}
+
+#myFooter{
+    border-radius: 10px;
+    margin-top: 3%;
+    padding-top:32px;
+    background-color: #282b2d;
+}
+
+#myFooter .container{
+    text-align: center;
+}
+
+#myFooter .footer-copyright{
+    text-align: center;
+    color: #a5a9aa;
+}
+
+#myFooter ul{
+    list-style-type: none;
+    margin-bottom: 18px;
+}
+
+#myFooter a{
+    color: #f2f2f2;
+    font-size: 18px;
+}
+
+#myFooter .contato{
+    color: #f2f2f2;
+    font-size: 18px;
+    line-height: 0;
+}
+
+#myFooter li{
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+#myFooter .footer-social{
+    text-align: center;
+    background-color: #eee;
+}
+
+#myFooter .fa{
+    background-color: white;
+    color: #d0d0d0;
+    text-decoration: none;
+    transition:color 0.2s;
+}
+
+.content{
+    flex: 1 0 auto;
+    -webkit-flex: 1 0 auto;
+    min-height: 200px;
+ }
+ 
+#myFooter{
+    flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+ }
+
+
+ .containerSeparator {
+    /* box-shadow:  0 0 25px  #666; */
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.container__separator {
+    border-bottom: 1px solid rgba(255, 255, 255);
+    height: 1px;
+    width: 100%;
+}
+
+/* tirando o efeito de fadeIn das paginas */
+/* @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+}
+
+@-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+    
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+} */
+
+.fadeIn {
+    display: block;
+    box-shadow:  6px 6px 6px  black;
+    margin-top: 2%;
+    border-radius: 10px;
+    padding: 3%;
+    background-color: #282b2d;
+}
+
+.breadcrumb {
+    align-items: center;
+    display: inline-flex;
+}
+
+.breadcrumb__separator {
+    margin: 0 8px;
+}
+
+
+/* botão */
+
+.con{
+	position: absolute;
+    background-color: red;
+	top: 27%;
+	left: 83%;
+	transform: translate(-50%, -50%);
+	display: inline-flex;
+}
+
+.btn{
+	height: 16px;
+	width: 16px;
+	margin: 5px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.btn1{
+	background: #fac536;
+	position: relative;
+	overflow: hidden;
+}
+.btn1::before{
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+	height: 10%;
+	opacity: 0;
+	background: #222;
+	transition: 300ms;
+}
+.btn1:hover::before{
+	opacity: 1;
+	top: 50%;
+}
+.btn2{
+	background: #39ea49;
+	position: relative;
+	overflow: hidden;
+}
+.btn2::before{
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 45%;
+	height: 45%;
+	opacity: 0;
+	background: #222;
+	transition: 300ms;
+}
+.btn2::after{
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(-45deg);
+	width: 15%;
+	height: 80%;
+	opacity: 0;
+	background: #39ea49;
+	transition: 300ms;
+}
+.btn2:hover::before, .btn2:hover::after{
+	opacity: 1;
+	top: 50%;
+}
+.btn3{
+	background: #f25056;
+	position: relative;
+	overflow: hidden;
+}
+.btn3::before{
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(-45deg);
+	width: 15%;
+	height: 50%;
+	opacity: 0;
+	background: #222;
+	transition: 300ms;
+}
+.btn3::after{
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+	width: 15%;
+	opacity: 0;
+	height: 50%;
+	background: #222;
+	transition: 300ms;
+}
+.btn3:hover::before, .btn3:hover::after{
+	opacity: 1;
+	top: 50%;
+}
+ab{
+  text-decoration: none;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: .9rem;
+}
+
+ab:hover{
+  opacity: .8;
+  border-bottom: 1px solid rgba(255, 255, 255, .8);
+}
